@@ -185,7 +185,7 @@ function createQuestion(questionIndex) {
 function rightAnswer() {
     $('.questionResult').html(`<h2>Correct!</h2>
     <p>Congratulations! You have passed this trial. Onto the next challenge!</p>
-    <img src = "Images/Correct.jpg" alt = "A man and a woman investigating strange ruins." class = "image correctImage">
+    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Correct.jpg" alt = "A man and a woman investigating strange ruins." class = "image correctImage">
     <button type="button" class="next-question button">Next Question</button>`);
     
 }
@@ -194,7 +194,7 @@ function rightAnswer() {
 function wrongAnswer() {
     $('.questionResult').html(`<h2>Incorrect</h2>
     <p>Drats! You answered incorrectly. The blind god Azathoth stirs in his slumber.</p>
-    <img src = "Images/Azathoth.jpg" alt = "A picture of the ancient god Azathoth. A giant, evil space-blob comprised of many tentacles and eyes, all around it's body." class = "image wrongImage">
+    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Azathoth.jpg" alt = "A picture of the ancient god Azathoth. A giant, evil space-blob comprised of many tentacles and eyes, all around it's body." class = "image wrongImage">
     <p>"${STORE[questionNumber].correctAnswer}" would have been a better response...</p>
     <button type="button" class="next-question button">Next Question</button>`);
 }
@@ -217,7 +217,7 @@ function quizResults() {
     $('.resultsPage').show();
     return $('.resultsPage').html(`<h2>Your Fate</h2>
     <p>Congratulations! You've managed to complete this test mostly intact. You have answered <span>${score}</span>/7 questions correctly. However, you are now burdened with the knowledge of our horrific cosmic reality. At what cost has this knowledge left your sanity?</p>
-    <img src = "Images/Results.jpg" alt = "A man and his family, driven mad by an indescribable horror shown as a purple light encapsulating them." class = "image resultsImage">
+    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Results.jpg" alt = "A man and his family, driven mad by an indescribable horror shown as a purple light encapsulating them." class = "image resultsImage">
     <button type = "button" class = "restart-quiz button">Restart Quiz</button>`);
 } 
 
