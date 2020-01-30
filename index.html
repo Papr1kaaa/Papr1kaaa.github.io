@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HP Lovecraft Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <section class = "mainHeader">
+                <h1>Lovecraftian Mythos Quiz</h1>
+                <section class = "scoreBoard">
+                    <ul><li class = "question-score">Question: <span class="questionNumber">0</span>/7</li>
+                    <li class = "question-score">Score: <span class="quizScore">0</span></li></ul>
+                </section>
+            </section>
+        </header>
+        <section class = "landing-page mainBox">
+            <h1>Are you worthy of the Old One's favor?</h1>
+            <img src = "Images/Cthulhu.jpg" alt = "A scary picture of the ancient god cthulhu rising from the sea." class = "image launchImage">
+            <button type = "button" class = "start-quiz button">Test Your Might!</button>
+        </section>
+        <section class="imageBox secondaryBox">
+            <img src = "Images/Questions.png" alt = "A woman investigating a dark corridor with a fishman stalking her." class = "image questionImage">
+        </section>
+        <section class="questions mainBox secondaryBox"></section>
+        <section class="questionResult mainBox secondaryBox"></section>
+        <section class="resultsPage mainBox secondaryBox"></section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

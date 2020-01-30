@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+  background-image: url("Images/Cave Background.jpg");
+}
+
+.mainHeader {
+    border: 2px grey solid;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 26px;   
+}
+
+.question-score {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+
+.mainBox, .imageBox {
+  text-align: center;
+  display: block;
+  border: 2px gray solid;
+  padding: 3px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  background-color: white;  
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3px;
+  width: 430px;
+}
+
+.correctImage {
+  width: 400px;
+}
+
+p {
+  padding-bottom: 3px;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.questionIndex {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  padding: 3px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  border: 1px black solid;
+}
+
+@media only screen and (min-width: 320px) {
+  .mainHeader {
+    width: 350px;
+    font-size: 20px;   
+}
+
+.question-score {
+    padding-right: 15px;
+    padding-bottom: 3px;
+}
+
+.mainBox, .imageBox {
+  width: 350px;
+}
+
+img {
+  width: 330px;
+}
+
+.correctImage {
+  width: 320px;
+}
+}
+
+@media only screen and (min-width: 550px) {
+  .mainHeader {
+    width: 480px;
+    font-size: 20px;   
+}
+
+.question-score {
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+
+.mainBox, .imageBox {
+  width: 480px;
+}
+
+img {
+  width: 450px;
+}
+
+.correctImage {
+  width: 420px;
+}
+}
+
+@media only screen and (min-width: 800px) {
+  .mainHeader {
+    width: 650px;
+    font-size: 20px;   
+}
+
+.question-score {
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+
+.mainBox, .imageBox {
+  width: 650px;
+}
+
+img {
+  width: 600px;
+}
+
+.correctImage {
+  width: 580px;
+}
+}
