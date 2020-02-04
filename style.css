@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("Images/Cave Background.jpg");
+  background-image: url("https://raw.githubusercontent.com/Papr1kaaa/Papr1kaaa.github.io/master/Images/Cave Background.jpg");
 }
 
 .mainHeader {
@@ -16,7 +16,7 @@ body {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("Images/parchment.jpg");
+    background-image: url("https://raw.githubusercontent.com/Papr1kaaa/Papr1kaaa.github.io/master/Images/parchment.jpg");
     font-family: 'Bangers', cursive;
     font-size: 26px;   
 }
@@ -37,7 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 450px;
-  background-image: url("Images/parchment.jpg");  
+  background-image: url("https://raw.githubusercontent.com/Papr1kaaa/Papr1kaaa.github.io/master/Images/parchment.jpg");  
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -85,7 +85,7 @@ fieldset{
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   border: 1px black solid;
-  background-image: url("Images/Submit.jpg");
+  background-image: url("https://raw.githubusercontent.com/Papr1kaaa/Papr1kaaa.github.io/master/Images/Submit.jpg");
   color: white;
   border-radius: 3px;
 }
