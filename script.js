@@ -102,7 +102,6 @@ function generateQuestion() {
         quizResults();
         $('.questionNumber').text(7);
     }
-console.log('generateQuestion');
 }
 
 //function to increment score by 1
@@ -133,7 +132,6 @@ function  startQuiz() {
         $('.questions').show();
         $('.questions').prepend(generateQuestion());
     });
-  console.log('start quiz');
 }
 
 //function to submit answer and check if answer is correct
@@ -153,7 +151,6 @@ function submitAnswer() {
             wrongAnswer();
         }
     });
-console.log('submit answer');
 }
 
 //Save for last?
@@ -178,14 +175,13 @@ function createQuestion(questionIndex) {
     });
     $(`<button type="submit" class="submit-answer button">Submit</button>`).appendTo(fieldSelector);
   return formMaker;
-  console.log('create questions');
 }
 
 //function to give feedback for correct answer
 function rightAnswer() {
     $('.questionResult').html(`<h2>Correct!</h2>
     <p>Congratulations! You have passed this trial. Onto the next challenge!</p>
-    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Correct.jpg" alt = "A man and a woman investigating strange ruins." class = "image correctImage">
+    <img src = "Images/Correct.jpg" alt = "A man and a woman investigating strange ruins." class = "image correctImage">
     <button type="button" class="next-question button">Next Question</button>`);
     
 }
@@ -194,7 +190,7 @@ function rightAnswer() {
 function wrongAnswer() {
     $('.questionResult').html(`<h2>Incorrect</h2>
     <p>Drats! You answered incorrectly. The blind god Azathoth stirs in his slumber.</p>
-    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Azathoth.jpg" alt = "A picture of the ancient god Azathoth. A giant, evil space-blob comprised of many tentacles and eyes, all around it's body." class = "image wrongImage">
+    <img src = "Images/Azathoth.jpg" alt = "A picture of the ancient god Azathoth. A giant, evil space-blob comprised of many tentacles and eyes, all around it's body." class = "image wrongImage">
     <p>"${STORE[questionNumber].correctAnswer}" would have been a better response...</p>
     <button type="button" class="next-question button">Next Question</button>`);
 }
@@ -209,7 +205,6 @@ function nextQuestion() {
         $('.questions').html(generateQuestion());
         console.log('next question internals');
     });
-    console.log('next question');
 }
 
 //function to determine final score and feedback
@@ -217,7 +212,7 @@ function quizResults() {
     $('.resultsPage').show();
     return $('.resultsPage').html(`<h2>Your Fate</h2>
     <p>Congratulations! You've managed to complete this test mostly intact. You have answered <span>${score}</span>/7 questions correctly. However, you are now burdened with the knowledge of our horrific cosmic reality. At what cost has this knowledge left your sanity?</p>
-    <img src = "https://github.com/Papr1kaaa/Papr1kaaa.github.io/blob/master/Images/Results.jpg" alt = "A man and his family, driven mad by an indescribable horror shown as a purple light encapsulating them." class = "image resultsImage">
+    <img src = "Images/Results.jpg" alt = "A man and his family, driven mad by an indescribable horror shown as a purple light encapsulating them." class = "image resultsImage">
     <button type = "button" class = "restart-quiz button">Restart Quiz</button>`);
 } 
 
@@ -239,7 +234,6 @@ function runQuiz() {
     submitAnswer();
     nextQuestion();
     restartQuiz();
-  console.log('run quiz');
 }
 
 
